@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Stephen Curry
+{% endblock %}
+
+{% block content %}
+    <h1 class="title-statistic">
+        Самый неудачный сезон: {{ season }}<br>Cреднее кол-во очков в этом сезоне: {{ pts }}
+    </h1>
+    <img src="{{ url_for('static', filename='min_pts_season.png') }}" alt="min_png", class="center">
+
+{% endblock %}

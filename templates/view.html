@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Cars
+{% endblock %}
+
+{% block content %}
+    {% for table in tables %}
+
+        {{ table | safe }}
+    {% endfor %}
+
+    <img src="{{ url_for('static', filename='python.jpg') }}" alt="Cool Python">
+{% endblock %}

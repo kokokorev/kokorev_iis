@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Stephen Curry
+{% endblock %}
+
+{% block content %}
+    <h1 class="title-statistic">
+        Больше время на паркете: {{ season }}<br>Среднее время за этот сезон: {{ min }} минут
+    </h1>
+    <img src="{{ url_for('static', filename='max_min_season.png') }}" alt="max_png" , class="center">
+{% endblock %}

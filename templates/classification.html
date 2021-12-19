@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Stephen Curry
+{% endblock %}
+
+{% block content %}
+    <h1 class="title-classification">
+    Классификация зависимости результата игры<br>от следующих параметров
+    </h1>
+    <div class="center">
+        {% for table in tables %}
+            {{ table|safe }}
+        {% endfor %}
+    </div>
+    <h2 class="subtitle-classification">Качество модели: {{ score }}<br>
+        Вывод: наибольшее влияние на результат игры оказывает кол-во набранных
+        очков Стефа Карри
+    </h2>
+
+
+{% endblock %}

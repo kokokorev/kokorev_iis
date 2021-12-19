@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Stephen Curry
+{% endblock %}
+
+{% block content %}
+    <div class="main-title">Cтатистика Стефа Карри<br>2009 - 2021<br> НБА</div>
+    {% for table in tables %}
+        {{ table|safe }}
+    {% endfor %}
+{% endblock %}
+

@@ -1,0 +1,128 @@
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    align-content: center;
+    background-color: #2A2C2F;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu__item {
+    font-weight: 400;
+    color: #ffffff;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-decoration: none;
+    transition: opacity 0.3s linear;
+}
+
+.menu__item:hover {
+    opacity: 50%;
+}
+
+.main-title {
+    font-size: 48px;
+    color: #ffffff;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    line-height: 50px;
+    max-width: 720px;
+    font-weight: 900;
+    max-height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    margin-block: 0;
+    padding: 32px 0;
+}
+
+.title-statistic {
+    font-size: 48px;
+    color: #ffffff;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    line-height: 50px;
+    max-width: 1080px;
+    font-weight: 900;
+    max-height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    margin-block: 0;
+    padding: 32px 0;
+    text-align: left;
+}
+
+.subtitle-classification {
+    font-size: 24px;
+    color: #ffffff;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    line-height: 26px;
+    font-weight: 900;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-block: 0;
+    padding: 32px 0;
+    text-align: left;
+}
+
+.title-classification {
+    font-size: 48px;
+    color: #ffffff;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    line-height: 50px;
+    max-width: 100%;
+    font-weight: 900;
+    max-height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    margin-block: 0;
+    padding: 32px 0;
+}
+
+h1, h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: black;
+}
+
+table.dataframe, .dataframe th, .dataframe td {
+    border: black;
+    border-bottom: 1px solid #C8C8C8;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 40px;
+    font-size: 1em;
+    margin: 0 auto;
+}
+
+tr {
+    transition: background-color 0.3s linear;
+}
+
+tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+tr:nth-child(even) {
+    background-color: #fff;
+}
+
+tr:hover {
+    background-color: #90ee90;
+    cursor: pointer;
+}

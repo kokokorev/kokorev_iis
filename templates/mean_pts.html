@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Stephen Curry
+{% endblock %}
+
+{% block content %}
+    <h1 class="title-statistic">
+        Больше всех бросков пропускает: {{ opp }}
+    </h1>
+    <img src="{{ url_for('static', filename='mean_pts.png') }}" alt="mean_range" , class="center">
+{% endblock %}

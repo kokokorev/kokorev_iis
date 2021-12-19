@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="menu">
+    <a class="menu__item" href="/">Главная</a>
+    <a class="menu__item" href="/min_pts_season_find">Минимум очков</a>
+    <a class="menu__item" href="/max_min_season_find">Максимальное время на паркете</a>
+    <a class="menu__item" href="/mean_pts">Средняя результативность</a>
+    <a class="menu__item" href="/classification">Классификация</a>
+</div>
+
+<hr>
+
+{% block content %}{% endblock %}
+</body>
+</html>
